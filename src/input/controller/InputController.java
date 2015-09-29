@@ -21,6 +21,11 @@ public class InputController
 		String temp = myPopups.grabAnswer("Type in your age");
 		int myAge;
 		
+		while(!isInteger(temp))
+		{
+			temp = myPopups.grabAnswer("Type in a positive integer for your age!");
+		}
+		
 		if(isInteger(temp))
 		{
 			myAge = Integer.parseInt(temp);
@@ -29,7 +34,9 @@ public class InputController
 		{
 			myAge = -9999999;
 		}
+		
 		myPopups.showResponse("You typed " + myAge);
+		
 		
 		String tempWeight = myPopups.grabAnswer("Type in your weight");
 		double myWeight;
@@ -42,6 +49,7 @@ public class InputController
 		{
 			myWeight = -.008;
 		}
+		
 		myPopups.showResponse("You typed " + myWeight);
 		
 		

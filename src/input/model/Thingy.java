@@ -1,7 +1,7 @@
 package input.model;
 
 /**
- * 
+ * Creates a Thingy object to show access and proper variable types.
  * @author Jordan Burnett
  * @version 1.0 09/24/15
  */
